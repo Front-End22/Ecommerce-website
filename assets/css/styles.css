@@ -101,7 +101,7 @@ font-family: 'Dosis';
         padding: 8rem;
         display: flex;
         justify-content: center;
-        align-self: center;
+        align-items: center;
      }
 }
 
