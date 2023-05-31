@@ -36,10 +36,10 @@ nav ul {
     position: relative;
     width: 80%;
     max-width: 600px;
-    height: 30%;
+    height:25%;
     margin-left: auto;
     margin-right: auto;
-    padding: 4rem;
+    padding: 7rem auto;
     top: 200px;
     background: rgba(255, 255, 255, 0.83);
     display: flex;
