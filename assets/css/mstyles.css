@@ -3,13 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'poppins', sans-serif;;
 }
-
 
 .furniture-heading {
     background-image: url(/assets/images/furniture.webp);
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -46,7 +46,7 @@ main button {
     width: 92%;
     height: auto;
     margin: 0 auto;
-    margin-top: 17rem;
+    margin-top: 13rem;
 }
 
 .product-container {
@@ -134,7 +134,7 @@ h3 {
 @media only screen and (max-width: 600px) {
     .col-container {
         width: 92%;
-        height: 18.69rem;
+        height: 250px;
         display: flex;
         gap: 1rem;
         margin: 0 auto;
@@ -176,7 +176,7 @@ h3 {
         white-space: pre;
 
     }
-
+     /* Best Product Sectiom  */
     .product-section {
        width: 92%;
        height: auto;
@@ -187,7 +187,6 @@ h3 {
    .product-container {
        display: flex;
        flex-direction: row;
-       flex: 1 0 auto;
        flex-wrap: wrap;
        gap: 0.5rem;
        margin: 2rem auto;
@@ -195,14 +194,21 @@ h3 {
    }
 
    .container {
-       width: 30%;
+       width: 31%;
        height: 21.88rem;
        color: #fff;
        text-align: center;
        display: flex;
        flex-direction: column;
        justify-content: center;
+       flex: auto;
    }
+
+   .kors,
+   .bostanten {
+    flex: 0.33 ;
+   }
+
 }
 
   /* Message Section desktop */
@@ -249,5 +255,22 @@ h3 {
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .break::before{
+        display: none;
+    }
+
+    .message h2 {
+        font-size: 2rem;
+        padding-left: 3rem;
+        font-family: 'poppins', sans-serif;
+        font-weight: 300;
+    }
+
+    .message button {
+        padding-left: 3rem;
     }
 }
