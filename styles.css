@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+  /* Mobile and Tablet styles */
+ header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(/assets/images/bg-image.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.8rem;
+    cursor: pointer;
+}
+
+.feather-icons {
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 5px;
+}
+
+nav ul {
+    display: none;
+}
+
+.hero-heading {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    height:25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7rem auto;
+    top: 200px;
+    background: rgba(255, 255, 255, 0.83);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    font-size: 1rem;
+    gap: 0.8rem;
+    text-align: center;
+}
+
+.hero-heading button {
+    font-family: 'Dosis';
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+    /* Desktop Styles */
+@media screen and (min-width: 1200px) {
+    header {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    header ul {
+        display: flex;
+        position: absolute;
+        width: 379px;
+        height: 26px;
+        left: calc(45% - 379px/2 + 17.5px);
+        margin-left: auto;
+        margin-right: auto;
+        top: 35px;
+        color: #fff;
+        font-size: 1.5rem;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    nav li {
+        margin-left: 2rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+     .hero-heading {
+        width: 80%;
+        max-width: 900px;
+        height: 20%;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+}
+
